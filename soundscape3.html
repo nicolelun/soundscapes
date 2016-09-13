@@ -1,0 +1,446 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="ie6 oldie"> <![endif]-->
+<!--[if IE 7]>    <html class="ie7 oldie"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8 oldie"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="">
+<!--<![endif]-->
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Soundscape</title>
+<link href="boilerplate.css" rel="stylesheet" type="text/css">
+<link href="soundscape_style.css" rel="stylesheet" type="text/css">
+
+<style type="text/css">
+.floatingButton {
+	background: blue; 
+	width: 40px; 
+	height: 40px;
+	margin: 50px;
+	position: absolute;
+	float: left;
+	clear: both;
+	border-radius: 50%;
+	box-shadow: 0px 0px 20px 5px blue inset;
+	-webkit-border-radius: 20%;
+	-webkit-box-shadow: 0px 0px 20px 5px blue inset;
+}
+#button1 { 
+	animation: 
+		floatButton1 32s alternate infinite linear,	
+		spin 10s infinite linear;
+	-webkit-animation:
+		floatButton1 32s alternate infinite linear,	
+		spin 10s infinite linear;
+	z-index: 1;
+}
+#button2 { 
+	animation: 
+		floatButton2 30s alternate infinite linear,	
+		spin 10s infinite linear;
+	-webkit-animation:
+		floatButton2 30s alternate infinite linear,
+		spin 10s infinite linear;
+	z-index: 2;
+}
+#button3 { 
+	animation: 
+		floatButton3 34s alternate infinite linear,	
+		spin 10s infinite linear;
+	-webkit-animation:
+		floatButton3 34s alternate infinite linear,
+		spin 10s infinite linear;
+	z-index: 3;
+}
+#button4 { 
+	animation: 
+		floatButton4 24s alternate infinite linear,	
+		spin 10s infinite linear;
+	-webkit-animation:
+		floatButton4 24s alternate infinite linear,
+		spin 10s infinite linear;
+	z-index: 4;
+}
+#button5 { 
+	animation: 
+		floatButton5 38s alternate infinite linear,	
+		spin 10s infinite linear;
+	-webkit-animation:
+		floatButton5 38s alternate infinite linear,
+		spin 10s infinite linear;
+	z-index: 5;
+}
+#button6 { 
+	animation: 
+		floatButton6 35s alternate infinite linear,	
+		spin 10s infinite linear;
+	-webkit-animation:
+		floatButton6 35s alternate infinite linear,
+		spin 10s infinite linear;
+	z-index: 6;
+}
+/*
+#button7 { 
+	animation: 
+		floatButton7 30s alternate infinite linear,	
+		spin 10s infinite linear;
+	-webkit-animation:
+		floatButton7 30s alternate infinite linear,
+		spin 10s infinite linear;
+	z-index: 7;
+}
+#button8 { 
+	animation: 
+		floatButton8 32s alternate infinite linear,	
+		spin 10s infinite linear;
+	-webkit-animation:
+		floatButton8 32s alternate infinite linear,
+		spin 10s infinite linear;
+	z-index: 8;
+}
+#button9 { 
+	animation: 
+		floatButton9 33s alternate infinite linear,	
+		spin 10s infinite linear;
+	-webkit-animation:
+		floatButton9 33s alternate infinite linear,
+		spin 10s infinite linear;
+	z-index: 9;
+}
+#button10 { 
+	animation: 
+		floatButton10 37s alternate infinite linear,	
+		spin 10s infinite linear;
+	-webkit-animation:
+		floatButton10 37s alternate infinite linear,
+		spin 10s infinite linear;
+	z-index: 10;
+}
+#button11 { 
+	animation: 
+		floatButton11 22s alternate infinite linear,
+		spin 10s infinite linear;
+	-webkit-animation: 
+		floatButton11 22s alternate infinite linear,
+		spin 10s infinite linear;
+	z-index: 11;
+}
+#button12 { 
+	animation: 
+		floatButton12 30s alternate infinite linear,
+		spin 10s infinite linear;
+	-webkit-animation:
+		floatButton12 30s alternate infinite linear,
+		spin 10s infinite linear;
+	z-index: 12;
+}
+#button13 { 
+	animation: 
+		floatButton13 34s alternate infinite linear,
+		spin 10s infinite linear;
+	-webkit-animation:
+		floatButton13 34s alternate infinite linear,
+		spin 10s infinite linear;
+	z-index: 13;
+}
+#button14 { 
+	animation:
+		floatButton14 28s alternate infinite linear,
+		spin 10s infinite linear;
+	-webkit-animation:
+		floatButton14 28s alternate infinite linear,
+		spin 10s infinite linear;
+	z-index: 14;
+}
+*/
+@keyframes spin {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+@-webkit-keyframes spin {
+    from {-webkit-transform: rotate(0deg);}
+    to {-webkit-transform: rotate(360deg);}
+}
+@keyframes floatButton1 {
+	0%   {background-color: red; left: 0px; top: 100px;}
+    50%  {background-color: white; left: 100px; top: 600px;}
+	100% {background-color: red; left: 200px; top: 0px;}
+}
+@-webkit-keyframes floatButton1 {
+ 	0%   {background-color: red; left: 0px; top: 100px;}
+    50%  {background-color: white; left: 100px; top: 600px;}
+	100% {background-color: red; left: 200px; top: 0px;}
+}
+@keyframes floatButton2 {
+	0%   {background-color: purple; left: 200px; bottom: 200px;}
+    50% {background-color: white; left: 400px; bottom: 600px;}
+	100% {background-color: yellow; left: 600px; bottom: 0px;}
+}
+@-webkit-keyframes floatButton2 {
+	0%   {background-color: purple; left: 0px; bottom: 200px;}
+    50% {background-color: white; left: 400px; bottom: 600px;}
+	100% {background-color: yellow; left: 600px; bottom: 0px;}
+}
+@keyframes floatButton3 {
+	0%   {background-color: white; left: 400px; top: 300px;}
+    50% {background-color: purple; left: 500px; top: 600px;}
+    100% {background-color: white; left: 700px; top: 0px;}
+}
+@-webkit-keyframes floatButton3 {
+    0%   {background-color: white; left: 400px; top: 300px;}
+    50% {background-color: purple; left: 500px; top: 600px;}
+    100% {background-color: white; left: 700px; top: 0px;}
+}
+@keyframes floatButton4 {
+	0%   {background-color: yellow; left: 600px; top: 300px;}
+    50% {background-color: red; left: 700px; top: 0px;}
+	100% {background-color: white; left: 1000px; top: 500px;}
+}
+@-webkit-keyframes floatButton4 {
+    0%   {background-color: yellow; left: 600px; top: 300px;}
+    50% {background-color: red; left: 700px; top: 0px;}
+	100% {background-color: white; left: 1000px; top: 500px;}
+}
+@keyframes floatButton5 {
+	0%   {background-color: white; right: 300px; top: 500px;}
+	50%  {background-color: yellow; right: 400px; top: 0px;}
+    100% {background-color: white; right: 500px; top: 500px;}
+}
+@-webkit-keyframes floatButton5 {
+	0%   {background-color: white; right: 300px; top: 500px;}
+	50%  {background-color: yellow; right: 400px; top: 0px;}
+    100% {background-color: white; right: 500px; top: 500px;}
+}
+@keyframes floatButton6 {
+	0%   {background-color: red; right: 0px; top: 200px;}
+	50%  {background-color: white; right: 500px; top: 0px;}
+    100% {background-color: yellow; right: 900px; top: 500px;}
+}
+@-webkit-keyframes floatButton6 {
+    0%   {background-color: red; right: 0px; top: 200px;}
+	50%  {background-color: white; right: 500px; top: 0px;}
+    100% {background-color: yellow; right: 900px; top: 500px;}
+}
+/*
+@keyframes floatButton7 {
+	0%   {background-color: yellow; right: 200px; top: 340px;}
+    100% {background-color: white; right: 600px; top: 0px;}
+}
+@-webkit-keyframes floatButton7 {
+    0%   {background-color: yellow; right: 200px; top: 340px;}
+    100% {background-color: white; right: 600px; top: 0px;}
+}
+@keyframes floatButton8 {
+	0%   {background-color: red; right: 400px; top: 300px;}
+    100% {background-color: white; right: 500px; top: 0px;}
+}
+@-webkit-keyframes floatButton8 {
+    0%   {background-color: red; right: 400px; top: 300px;}
+    100% {background-color: white; right: 100px; top: 0px;}
+}
+@keyframes floatButton9 {
+	0%   {background-color: yellow; right: 200px; top: 200px;}
+    100% {background-color: white; right: 260px; top: 0px;}
+}
+@-webkit-keyframes floatButton9 {
+    0%   {background-color: yellow; right: 200px; top: 200px;}
+    100% {background-color: white; right: 260px; top: 0px;}
+}
+@keyframes floatButton10 {
+	0%   {background-color: white; right: 100px; top: 0px;}
+    100% {background-color: purple; right: 300px; top: 400px;}
+}
+@-webkit-keyframes floatButton10 {
+    0%   {background-color: white; right: 100px; top: 0px;}
+    100% {background-color: purple; right: 300px; top: 400px;}
+}
+@keyframes floatButton11 {
+	0%   {background-color: yellow; right: 0px; top: 600px;}
+    100% {background-color: purple; right: 400px; top: 0px;}
+}
+@-webkit-keyframes floatButton11 {
+    0%   {background-color: yellow; right: 0px; top: 600px;}
+    100% {background-color: purple; right: 400px; top: 0px;}
+}
+@keyframes floatButton12 {
+	0%   {background-color: yellow; left: 500px; top: 500px;}
+    100% {background-color: purple; left: 0px; top: 0px;}
+}
+@-webkit-keyframes floatButton12 {
+    0%   {background-color: yellow; left: 500px; top: 500px;}
+    100% {background-color: purple; left: 0px; top: 0px;}
+}
+@keyframes floatButton13 {
+	0%   {background-color: yellow; right: 540px; top: 200px;}
+    100% {background-color: purple; right: 500px; top: 700px;}
+}
+@-webkit-keyframes floatButton13 {
+    0%   {background-color: yellow; right: 540px; top: 200px;}
+    100% {background-color: purple; right: 500px; top: 700px;}
+}
+@keyframes floatButton14 {
+	0%   {background-color: green; right: 600px; bottom: 0px;}
+    50% {background-color: yellow; right: 400px; bottom: 700px;}
+	100% {background-color: yellow; right: 200px; bottom: 0px;}
+}
+@-webkit-keyframes floatButton14 {
+    0%   {background-color: green; right: 600px; bottom: 0px;}
+    50% {background-color: yellow; right: 400px; bottom: 700px;}
+	100% {background-color: yellow; right: 200px; bottom: 0px;}
+}
+*/
+</style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+<!-- begin hit area toggle -->
+<script>
+$(document).ready(function(){
+    $(".hitSelected").click(function(){
+        $(this).toggleClass("hitSelected");
+    });
+});
+$(document).ready(function(){
+    $("#pauseAll1").click(function(){
+        $(".hitSelected").removeClass("hitSelected").addClass("hitArea");
+    });
+});
+$(document).ready(function(){
+    $("#playAll1").click(function(){
+        $(".hitArea").addClass("hitSelected");
+    });
+});
+</script>
+<!-- end hit area toggle -->
+
+<!-- begin menu toggle -->
+<script>
+$(document).ready(function(){
+	$("#menuButton1").click(function() {
+		$(".menuButtonBox").toggleClass("menuButtonBox-change");
+		$(".menuBar").toggleClass("menuBar-change");
+	});
+});
+$(document).ready(function(){
+	$("#closeMenu1").click(function() {
+		$(".menuButtonBox").toggleClass("menuButtonBox-change");
+		$(".menuBar").toggleClass("menuBar-change");
+	});
+});
+</script>
+<!-- end menu toggle -->
+
+<!-- begin media play -->
+<script>
+function playPause(mediaID) { 
+	var myMedia = document.getElementById(mediaID); 
+    if (myMedia.paused) {
+        myMedia.play();
+	}
+    else { 
+        myMedia.pause();
+	}
+}  
+function pauseAll() {
+	var myMedia = document.getElementsByClassName('media');
+	var i = myMedia.length;
+	while (i--) {
+    	myMedia[i].pause();
+	}
+}
+function playAll() {
+	var myMedia = document.getElementsByClassName('media');
+	var i = myMedia.length;
+	while (i--) {
+    	myMedia[i].play();
+	}
+}
+</script>
+<!-- end media play -->
+
+</head>
+
+<body style="background-color: black">
+
+<!-- begin menu -->
+<!-- begin button box -->
+<div class="menuButtonBox">
+	<div id="menuButton1"><a class="menuButton">Menu</a></div>
+    <div class="pauseAllBox" id="playAll1" onClick="playAll()">
+    	<a class="menuButton"><img src="images/Speaker_Icon_white.png" width="20px" alt="Reset Audio"> Reset</a>
+	</div> 
+	<div class="pauseAllBox" id="pauseAll1" onClick="pauseAll()">
+    	<a class="menuButton"><img src="images/Speaker_Icon_white.png" width="20px" alt="Mute All Audio"> Mute All</a>
+	</div> 
+</div>
+<!-- end button box -->
+<div class="menuBar">
+	<div style="float: right;">
+		<button type="button" id="closeMenu1"><img src="images/x_button.png" width="16" height="16" alt="Close Menu"/></button>
+	</div>
+	<div class="menuText" style="width:100%">
+		<ul>
+			<li><a href="index.html">Soundscape 1</li>
+			<li><a href="soundscape2.html">Soundscape 2</a></li>
+    		<li><a href="soundscape3.html" class="menuCurrentPage">Soundscape 3</a></li>
+    	</ul>
+	</div>
+</div>
+<!-- end menu -->
+
+<audio class="media" id="media1" loop autoplay onLoadedData="volume=0.6">
+	<source src="media/02_Thunder.mp3" type="audio/mpeg">
+</audio>
+<audio class="media" id="media2" loop autoplay onLoadedData="volume=0.8">
+	<source src="media/10-Track10_SciFiBeep.mp3" type="audio/mpeg">
+</audio>
+<audio class="media" id="media3" loop autoplay>
+	<source src="media/37_BubblingDullHeavy.mp3" type="audio/mpeg" onLoadedData="volume=0.5">
+</audio>
+<audio class="media" id="media4" loop autoplay onLoadedData="volume=0.4">
+	<source src="media/48_Wind.mp3" type="audio/mpeg">
+</audio>
+<audio class="media" id="media5" loop autoplay onLoadedData="volume=0.1">
+	<source src="media/Track20_HighTechDrill.mp3" type="audio/mpeg">
+</audio>
+<audio class="media" id="media6" loop autoplay onLoadedData="volume=0.2">
+	<source src="media/01_Baby.mp3" type="audio/mpeg">
+</audio>
+
+
+<div class="floatingButton" id="button1">
+	<div class="hitArea hitSelected" id="hit1" onclick="playPause('media1')">&nbsp;</div>
+</div>
+<div class="floatingButton" id="button2">
+	<div class="hitArea hitSelected" id="hit2" onclick="playPause('media2')">&nbsp;</div>
+</div>
+<div class="floatingButton" id="button3">
+    <div class="hitArea hitSelected" id="hit3" onclick="playPause('media3')">&nbsp;</div>
+</div>
+<div class="floatingButton" id="button4">
+	<div class="hitArea hitSelected" id="hit4" onclick="playPause('media4')">&nbsp;</div>
+</div>
+<div class="floatingButton" id="button5">
+	<div class="hitArea hitSelected" id="hit5" onclick="playPause('media5')">&nbsp;</div>
+</div>
+<div class="floatingButton" id="button6">
+	<div class="hitArea hitSelected" id="hit6" onclick="playPause('media6')">&nbsp;</div>
+</div>
+<!--
+<div class="floatingButton" id="button7">
+	<div class="hitArea hitSelected" id="hit7" onclick="playPause('media7')">&nbsp;</div>
+</div>
+<div class="floatingButton" id="button8">
+	<div class="hitArea hitSelected" id="hit1" onclick="playPause('media8')">&nbsp;</div>
+</div>
+<div class="floatingButton" id="button9">
+	<div class="hitArea hitSelected" id="hit2" onclick="playPause('media9')">&nbsp;</div>
+</div>
+<div class="floatingButton" id="button10">
+    <div class="hitArea hitSelected" id="hit3" onclick="playPause('media10')">&nbsp;</div>
+</div>
+-->
+
+</body>
+</html>
