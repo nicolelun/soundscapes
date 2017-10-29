@@ -1,0 +1,542 @@
+/*========================================== 
+    FLOATING BUTTONS FOR SOUNDSCAPE 1
+==========================================*/
+
+.floatingButton {
+    background: blue;
+    width: 40px;
+    height: 40px;
+    margin: 40px;
+    position: relative;
+    float: left;
+    border-radius: 50%;
+    box-shadow: 0px 0px 20px 5px blue inset;
+    -webkit-border-radius: 50%;
+    -webkit-box-shadow: 0px 0px 20px 5px blue inset;
+}
+
+#button1 {
+    animation: floatButton1-start 6s ease-out,
+    floatButton1 30s 6s alternate infinite ease-in;
+    -webkit-animation: floatButton1-start 6s ease-out,
+    floatButton1 30s 6s alternate infinite ease-in;
+    z-index: 1;
+}
+
+#button2 {
+    animation-name: floatButton2-start 20s linear, /* down */
+    floatButton2 40s 20s alternate infinite ease-out;
+    -webkit-animation: floatButton2-start 20s linear, /* down */
+    floatButton2 40s 20s alternate infinite ease-out;
+    z-index: 2;
+}
+
+#button3 {
+    animation-name: floatButton3-start 11s ease-out, /* up */
+    floatButton3 33s 11s alternate infinite ease-in;
+    -webkit-animation: floatButton3-start 11s ease-out, /* up */
+    floatButton3 33s 11s alternate infinite ease-in;
+    z-index: 3;
+}
+
+#button4 {
+    animation-name: floatButton4;
+    animation-duration: 28s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+    -webkit-animation-name: floatButton4;
+    -webkit-animation-duration: 28s;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-out;
+    z-index: 4;
+}
+
+#button5 {
+    animation-name: /*floatButton5-start 8s ease-out,*/
+    /* up */
+    floatButton5 37s/*8s*/
+    alternate infinite/*ease-in*/
+    ease-out;
+    -webkit-animation: /*floatButton5-start 8s ease-out,*/
+    /* up */
+    floatButton5 37s/*8s*/
+    alternate infinite/*ease-in*/
+    ease-out;
+    z-index: 5;
+}
+
+#button6 {
+    animation-name: floatButton6;
+    animation-duration: 26s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+    -webkit-animation-name: floatButton6;
+    -webkit-animation-duration: 26s;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-out;
+    z-index: 6;
+}
+
+#button7 {
+    animation: floatButton7-start 9s ease-out, /* start up one-fourth */
+    floatButton7 36s 9s alternate infinite ease-in;
+    -webkit-animation: floatButton7-start 9s ease-out, /* start up one-fourth */
+    floatButton7 36s 9s alternate infinite ease-in;
+    z-index: 7;
+}
+
+#button8 {
+    animation-name: floatButton8-start 7s linear, /* start down one-fifth */
+    floatButton8 35s 7s alternate infinite ease-out;
+    -webkit-animation: floatButton8-start 7s linear, /* start down one-fifth */
+    floatButton8 35s 7s alternate infinite ease-out;
+    z-index: 8;
+}
+
+#button9 {
+    animation-name: floatButton9-start 20s linear, /* start down one-half */
+    floatButton9 40s 20s alternate infinite ease-out;
+    -webkit-animation: floatButton9-start 20s linear, /* start down one-half */
+    floatButton9 40s 20s alternate infinite ease-out;
+    z-index: 9;
+}
+
+@keyframes floatButton1-start {
+    0% {
+        background-color: yellow;
+        left: 0px;
+        top: 100px;
+    }
+    /* one-fifth */
+    100% {
+        background-color: white;
+        left: 0px;
+        top: 0px;
+    }
+    /* top */
+}
+
+@-webkit-keyframes floatButton1-start {
+    0% {
+        background-color: yellow;
+        left: 0px;
+        top: 100px;
+    }
+    100% {
+        background-color: white;
+        left: 0px;
+        top: 0px;
+    }
+}
+
+@keyframes floatButton1 {
+    0% {
+        background-color: white;
+        left: 0px;
+        top: 0px;
+    }
+    /* top */
+    100% {
+        background-color: yellow;
+        left: 0px;
+        top: 500px;
+    }
+    /* bottom */
+}
+
+@-webkit-keyframes floatButton1 {
+    0% {
+        background-color: white;
+        left: 0px;
+        top: 0px;
+    }
+    100% {
+        background-color: yellow;
+        left: 0px;
+        top: 500px;
+    }
+}
+
+@keyframes floatButton2-start {
+    0% {
+        background-color: white;
+        left: 0px;
+        top: 250px;
+    }
+    /* one-half */
+    100% {
+        background-color: yellow;
+        left: 0px;
+        top: 500px;
+    }
+    /* bottom */
+}
+
+@-webkit-keyframes floatButton2-start {
+    0% {
+        background-color: white;
+        left: 0px;
+        top: 250px;
+    }
+    100% {
+        background-color: yellow;
+        left: 0px;
+        top: 500px;
+    }
+}
+
+@keyframes floatButton2 {
+    0% {
+        background-color: yellow;
+        left: 0px;
+        top: 500px;
+    }
+    /* bottom */
+    100% {
+        background-color: white;
+        left: 0px;
+        top: 0px;
+    }
+    /* top */
+}
+
+@-webkit-keyframes floatButton2 {
+    0% {
+        background-color: yellow;
+        left: 0px;
+        top: 500px;
+    }
+    100% {
+        background-color: white;
+        left: 0px;
+        top: 0px;
+    }
+}
+
+@keyframes floatButton3-start {
+    0% {
+        background-color: red;
+        left: 0px;
+        top: 166px;
+    }
+    /* one-third */
+    100% {
+        background-color: white;
+        left: 0px;
+        top: 0px;
+    }
+    /* top */
+}
+
+@-webkit-keyframes floatButton3-start {
+    0% {
+        background-color: red;
+        left: 0px;
+        top: 166px;
+    }
+    100% {
+        background-color: white;
+        left: 0px;
+        top: 0px;
+    }
+}
+
+@keyframes floatButton3 {
+    0% {
+        background-color: white;
+        left: 0px;
+        top: 0px;
+    }
+    /* top */
+    100% {
+        background-color: red;
+        left: 0px;
+        top: 500px;
+    }
+    /* bottom */
+}
+
+@-webkit-keyframes floatButton3 {
+    0% {
+        background-color: white;
+        left: 0px;
+        top: 0px;
+    }
+    100% {
+        background-color: red;
+        left: 0px;
+        top: 500px;
+    }
+}
+
+@keyframes floatButton4-start {
+    0% {
+        background-color: yellow;
+        left: 0px;
+        top: 300px;
+    }
+    100% {
+        background-color: white;
+        left: 0px;
+        top: 0px;
+    }
+}
+
+@-webkit-keyframes floatButton4-start {
+    0% {
+        background-color: yellow;
+        left: 0px;
+        top: 300px;
+    }
+    100% {
+        background-color: white;
+        left: 0px;
+        top: 0px;
+    }
+}
+
+@keyframes floatButton4 {
+    0% {
+        background-color: yellow;
+        left: 0px;
+        top: 0px;
+    }
+    /* bottom */
+    100% {
+        background-color: red;
+        left: 0px;
+        top: 100px;
+    }
+    /* one-fifth */
+}
+
+@-webkit-keyframes floatButton4 {
+    0% {
+        background-color: yellow;
+        left: 0px;
+        top: 0px;
+    }
+    100% {
+        background-color: red;
+        left: 0px;
+        top: 100px;
+    }
+}
+
+@keyframes floatButton5 {
+    0% {
+        background-color: white;
+        left: 0px;
+        top: 200px;
+    }
+    100% {
+        background-color: yellow;
+        left: 0px;
+        top: 500px;
+    }
+}
+
+@-webkit-keyframes floatButton5 {
+    0% {
+        background-color: white;
+        left: 0px;
+        top: 200px;
+    }
+    100% {
+        background-color: yellow;
+        left: 0px;
+        top: 500px;
+    }
+}
+
+@keyframes floatButton6 {
+    0% {
+        background-color: red;
+        left: 0px;
+        top: 500px;
+    }
+    /* up */
+    100% {
+        background-color: white;
+        left: 0px;
+        top: 20px;
+    }
+}
+
+@-webkit-keyframes floatButton6 {
+    0% {
+        background-color: red;
+        left: 0px;
+        top: 500px;
+    }
+    /* up */
+    100% {
+        background-color: white;
+        left: 0px;
+        top: 20px;
+    }
+}
+
+@keyframes floatButton7-start {
+    0% {
+        background-color: yellow;
+        left: 0px;
+        top: 300px;
+    }
+    100% {
+        background-color: white;
+        left: 0px;
+        top: 100px;
+    }
+}
+
+@-webkit-keyframes floatButton7-start {
+    0% {
+        background-color: yellow;
+        left: 0px;
+        top: 300px;
+    }
+    100% {
+        background-color: white;
+        left: 0px;
+        top: 100px;
+    }
+}
+
+@keyframes floatButton7 {
+    0% {
+        background-color: white;
+        left: 0px;
+        top: 100px;
+    }
+    100% {
+        background-color: yellow;
+        left: 0px;
+        top: 500px;
+    }
+}
+
+@-webkit-keyframes floatButton7 {
+    0% {
+        background-color: white;
+        left: 0px;
+        top: 100px;
+    }
+    100% {
+        background-color: yellow;
+        left: 0px;
+        top: 500px;
+    }
+}
+
+@keyframes floatButton8-start {
+    0% {
+        background-color: red;
+        left: 0px;
+        top: 400px;
+    }
+    /* start down */
+    100% {
+        background-color: white;
+        left: 0px;
+        top: 500px;
+    }
+}
+
+@-webkit-keyframes floatButton8-start {
+    0% {
+        background-color: red;
+        left: 0px;
+        top: 400px;
+    }
+    /* start down */
+    100% {
+        background-color: white;
+        left: 0px;
+        top: 500px;
+    }
+}
+
+@keyframes floatButton8 {
+    0% {
+        background-color: white;
+        left: 0px;
+        top: 500px;
+    }
+    100% {
+        background-color: red;
+        left: 0px;
+        top: 100px;
+    }
+}
+
+@-webkit-keyframes floatButton8 {
+    0% {
+        background-color: white;
+        left: 0px;
+        top: 500px;
+    }
+    100% {
+        background-color: red;
+        left: 0px;
+        top: 100px;
+    }
+}
+
+@keyframes floatButton9-start {
+    0% {
+        background-color: red;
+        left: 0px;
+        top: 250px;
+    }
+    /* start down */
+    100% {
+        background-color: yellow;
+        left: 0px;
+        top: 500px;
+    }
+}
+
+@-webkit-keyframes floatButton9-start {
+    0% {
+        background-color: red;
+        left: 0px;
+        top: 250px;
+    }
+    /* start down */
+    100% {
+        background-color: yellow;
+        left: 0px;
+        top: 500px;
+    }
+}
+
+@keyframes floatButton9 {
+    0% {
+        background-color: yellow;
+        left: 0px;
+        top: 500px;
+    }
+    100% {
+        background-color: red;
+        left: 0px;
+        top: 0px;
+    }
+}
+
+@-webkit-keyframes floatButton9 {
+    0% {
+        background-color: yellow;
+        left: 0px;
+        top: 500px;
+    }
+    100% {
+        background-color: red;
+        left: 0px;
+        top: 0px;
+    }
+}

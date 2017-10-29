@@ -1,0 +1,135 @@
+.floatingButton {
+	background: blue; 
+	width: 40px; 
+	height: 40px;
+	margin: 50px;
+	position: absolute;
+	float: left;
+	clear: both;
+	border-radius: 50%;
+	box-shadow: 0px 0px 20px 5px blue inset;
+	-webkit-border-radius: 20%;
+	-webkit-box-shadow: 0px 0px 20px 5px blue inset;
+}
+#button1 { 
+	animation: 
+		floatButton1 32s alternate infinite linear,	
+		spin 10s infinite linear;
+	-webkit-animation:
+		floatButton1 32s alternate infinite linear,	
+		spin 10s infinite linear;
+	z-index: 1;
+}
+#button2 { 
+	animation: 
+		floatButton2 30s alternate infinite linear,	
+		spin 10s infinite linear;
+	-webkit-animation:
+		floatButton2 30s alternate infinite linear,
+		spin 10s infinite linear;
+	z-index: 2;
+}
+#button3 { 
+	animation: 
+		floatButton3 34s alternate infinite linear,	
+		spin 10s infinite linear;
+	-webkit-animation:
+		floatButton3 34s alternate infinite linear,
+		spin 10s infinite linear;
+	z-index: 3;
+}
+#button4 { 
+	animation: 
+		floatButton4 24s alternate infinite linear,	
+		spin 10s infinite linear;
+	-webkit-animation:
+		floatButton4 24s alternate infinite linear,
+		spin 10s infinite linear;
+	z-index: 4;
+}
+#button5 { 
+	animation: 
+		floatButton5 38s alternate infinite linear,	
+		spin 10s infinite linear;
+	-webkit-animation:
+		floatButton5 38s alternate infinite linear,
+		spin 10s infinite linear;
+	z-index: 5;
+}
+#button6 { 
+	animation: 
+		floatButton6 35s alternate infinite linear,	
+		spin 10s infinite linear;
+	-webkit-animation:
+		floatButton6 35s alternate infinite linear,
+		spin 10s infinite linear;
+	z-index: 6;
+}
+@keyframes spin {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+@-webkit-keyframes spin {
+    from {-webkit-transform: rotate(0deg);}
+    to {-webkit-transform: rotate(360deg);}
+}
+@keyframes floatButton1 {
+	0%   {background-color: red; left: 0px; top: 100px;}
+    50%  {background-color: white; left: 100px; top: 600px;}
+	100% {background-color: red; left: 200px; top: 0px;}
+}
+@-webkit-keyframes floatButton1 {
+ 	0%   {background-color: red; left: 0px; top: 100px;}
+    50%  {background-color: white; left: 100px; top: 600px;}
+	100% {background-color: red; left: 200px; top: 0px;}
+}
+@keyframes floatButton2 {
+	0%   {background-color: purple; left: 200px; bottom: 200px;}
+    50% {background-color: white; left: 400px; bottom: 600px;}
+	100% {background-color: yellow; left: 600px; bottom: 0px;}
+}
+@-webkit-keyframes floatButton2 {
+	0%   {background-color: purple; left: 0px; bottom: 200px;}
+    50% {background-color: white; left: 400px; bottom: 600px;}
+	100% {background-color: yellow; left: 600px; bottom: 0px;}
+}
+@keyframes floatButton3 {
+	0%   {background-color: white; left: 400px; top: 300px;}
+    50% {background-color: purple; left: 500px; top: 600px;}
+    100% {background-color: white; left: 700px; top: 0px;}
+}
+@-webkit-keyframes floatButton3 {
+    0%   {background-color: white; left: 400px; top: 300px;}
+    50% {background-color: purple; left: 500px; top: 600px;}
+    100% {background-color: white; left: 700px; top: 0px;}
+}
+@keyframes floatButton4 {
+	0%   {background-color: yellow; left: 600px; top: 300px;}
+    50% {background-color: red; left: 700px; top: 0px;}
+	100% {background-color: white; left: 1000px; top: 500px;}
+}
+@-webkit-keyframes floatButton4 {
+    0%   {background-color: yellow; left: 600px; top: 300px;}
+    50% {background-color: red; left: 700px; top: 0px;}
+	100% {background-color: white; left: 1000px; top: 500px;}
+}
+@keyframes floatButton5 {
+	0%   {background-color: white; right: 300px; top: 500px;}
+	50%  {background-color: yellow; right: 400px; top: 0px;}
+    100% {background-color: white; right: 500px; top: 500px;}
+}
+@-webkit-keyframes floatButton5 {
+	0%   {background-color: white; right: 300px; top: 500px;}
+	50%  {background-color: yellow; right: 400px; top: 0px;}
+    100% {background-color: white; right: 500px; top: 500px;}
+}
+@keyframes floatButton6 {
+	0%   {background-color: red; right: 0px; top: 200px;}
+	50%  {background-color: white; right: 500px; top: 0px;}
+    100% {background-color: yellow; right: 900px; top: 500px;}
+}
+@-webkit-keyframes floatButton6 {
+    0%   {background-color: red; right: 0px; top: 200px;}
+	50%  {background-color: white; right: 500px; top: 0px;}
+    100% {background-color: yellow; right: 900px; top: 500px;}
+}

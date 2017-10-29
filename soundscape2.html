@@ -1,781 +1,129 @@
 <!doctype html>
-<!--[if lt IE 7]> <html class="ie6 oldie"> <![endif]-->
-<!--[if IE 7]>    <html class="ie7 oldie"> <![endif]-->
-<!--[if IE 8]>    <html class="ie8 oldie"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="">
-<!--<![endif]-->
 <html>
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Soundscape</title>
-<link href="boilerplate.css" rel="stylesheet" type="text/css">
-<link href="soundscape_style.css" rel="stylesheet" type="text/css">
-
-<!--
-<style type="text/css">
-.floatingButton {
-	background: blue; 
-	width: 40px; 
-	height: 40px;
-	margin: 50px;
-	position: absolute;
-	float: left;
-	clear: both;
-	border-radius: 50%;
-	box-shadow: 0px 0px 20px 5px blue inset;
-	-webkit-border-radius: 50%;
-	-webkit-box-shadow: 0px 0px 20px 5px blue inset;
-}
-#button1 { 
-	animation-name: floatButton1; 
-	animation-duration: 32s;
-	animation-direction: normal;
-	animation-iteration-count: infinite;
-	animation-timing-function: linear;
-	-webkit-animation-name: floatButton1; /* Chrome, Safari, Opera */
-    -webkit-animation-duration: 32s;
-	-webkit-animation-direction: normal;
-	-webkit-animation-iteration-count: infinite;
-	-webkit-animation-timing-function: linear;
-	z-index: 1;
-}
-#button2 { 
-	animation-name: floatButton2; 
-	animation-duration: 30s;
-	animation-direction: alternate;
-	animation-iteration-count: infinite;
-	animation-timing-function: linear;
-	-webkit-animation-name: floatButton2; /* Chrome, Safari, Opera */
-    -webkit-animation-duration: 30s;
-	-webkit-animation-direction: alternate;
-	-webkit-animation-iteration-count: infinite;
-	-webkit-animation-timing-function: linear;
-	z-index: 2;
-}
-#button3 { 
-	animation-name: floatButton3; 
-	animation-duration: 34s;
-	animation-direction: alternate;
-	animation-iteration-count: infinite;
-	animation-timing-function: linear;
-	-webkit-animation-name: floatButton3; /* Chrome, Safari, Opera */
-    -webkit-animation-duration: 34s;
-	-webkit-animation-direction: alternate;
-	-webkit-animation-iteration-count: infinite;
-	-webkit-animation-timing-function: linear;
-	z-index: 3;
-}
-#button4 { 
-	animation-name: floatButton4; 
-	animation-duration: 24s;
-	animation-direction: alternate;
-	animation-iteration-count: infinite;
-	animation-timing-function: linear;
-	-webkit-animation-name: floatButton4; /* Chrome, Safari, Opera */
-    -webkit-animation-duration: 24s;
-	-webkit-animation-direction: alternate;
-	-webkit-animation-iteration-count: infinite;
-	-webkit-animation-timing-function: linear;
-	z-index: 4;
-}
-#button5 { 
-	animation-name: floatButton5; 
-	animation-duration: 26s;
-	animation-direction: alternate;
-	animation-iteration-count: infinite;
-	animation-timing-function: linear;
-	-webkit-animation-name: floatButton5; /* Chrome, Safari, Opera */
-    -webkit-animation-duration: 26s;
-	-webkit-animation-direction: alternate;
-	-webkit-animation-iteration-count: infinite;
-	-webkit-animation-timing-function: linear;
-	z-index: 5;
-}
-#button6 { 
-	animation-name: floatButton6; 
-	animation-duration: 28s;
-	animation-direction: alternate;
-	animation-iteration-count: infinite;
-	animation-timing-function: linear;
-	-webkit-animation-name: floatButton6; /* Chrome, Safari, Opera */
-    -webkit-animation-duration: 28s;
-	-webkit-animation-direction: alternate;
-	-webkit-animation-iteration-count: infinite;
-	-webkit-animation-timing-function: linear;
-	z-index: 6;
-}
-#button7 { 
-	animation-name: floatButton7; 
-	animation-duration: 30s;
-	animation-direction: alternate;
-	animation-iteration-count: infinite;
-	animation-timing-function: linear;
-	-webkit-animation-name: floatButton7; /* Chrome, Safari, Opera */
-    -webkit-animation-duration: 30s;
-	-webkit-animation-direction: alternate;
-	-webkit-animation-iteration-count: infinite;
-	-webkit-animation-timing-function: linear;
-	z-index: 7;
-}
-#button8 { 
-	animation-name: floatButton8; 
-	animation-duration: 32s;
-	animation-direction: alternate;
-	animation-iteration-count: infinite;
-	animation-timing-function: linear;
-	-webkit-animation-name: floatButton8; /* Chrome, Safari, Opera */
-    -webkit-animation-duration: 32s;
-	-webkit-animation-direction: alternate;
-	-webkit-animation-iteration-count: infinite;
-	-webkit-animation-timing-function: linear;
-	z-index: 8;
-}
-#button9 { 
-	animation-name: floatButton9; 
-	animation-duration: 34s;
-	animation-direction: alternate;
-	animation-iteration-count: infinite;
-	animation-timing-function: linear;
-	-webkit-animation-name: floatButton9; /* Chrome, Safari, Opera */
-    -webkit-animation-duration: 34s;
-	-webkit-animation-direction: alternate;
-	-webkit-animation-iteration-count: infinite;
-	-webkit-animation-timing-function: linear;
-	z-index: 9;
-}
-#button10 { 
-	animation-name: floatButton10; 
-	animation-duration: 36s;
-	animation-direction: alternate;
-	animation-iteration-count: infinite;
-	animation-timing-function: linear;
-	-webkit-animation-name: floatButton10; /* Chrome, Safari, Opera */
-    -webkit-animation-duration: 36s;
-	-webkit-animation-direction: alternate;
-	-webkit-animation-iteration-count: infinite;
-	-webkit-animation-timing-function: linear;
-	z-index: 10;
-}
-#button11 { 
-	animation-name: floatButton11; 
-	animation-duration: 22s;
-	animation-direction: alternate;
-	animation-iteration-count: infinite;
-	animation-timing-function: linear;
-	-webkit-animation-name: floatButton11; /* Chrome, Safari, Opera */
-    -webkit-animation-duration: 22s;
-	-webkit-animation-direction: alternate;
-	-webkit-animation-iteration-count: infinite;
-	-webkit-animation-timing-function: linear;
-	z-index: 11;
-}
-#button12 { 
-	animation-name: floatButton12; 
-	animation-duration: 24s;
-	animation-direction: alternate;
-	animation-iteration-count: infinite;
-	animation-timing-function: linear;
-	-webkit-animation-name: floatButton12; /* Chrome, Safari, Opera */
-    -webkit-animation-duration: 24s;
-	-webkit-animation-direction: alternate;
-	-webkit-animation-iteration-count: infinite;
-	-webkit-animation-timing-function: linear;
-	z-index: 12;
-}
-#button13 { 
-	animation-name: floatButton13; 
-	animation-duration: 24s;
-	animation-direction: alternate;
-	animation-iteration-count: infinite;
-	animation-timing-function: linear;
-	-webkit-animation-name: floatButton13; /* Chrome, Safari, Opera */
-    -webkit-animation-duration: 24s;
-	-webkit-animation-direction: alternate;
-	-webkit-animation-iteration-count: infinite;
-	-webkit-animation-timing-function: linear;
-	z-index: 13;
-}
-#button14 { 
-	animation-name: floatButton14; 
-	animation-duration: 24s;
-	animation-direction: alternate;
-	animation-iteration-count: infinite;
-	animation-timing-function: linear;
-	-webkit-animation-name: floatButton14; /* Chrome, Safari, Opera */
-    -webkit-animation-duration: 24s;
-	-webkit-animation-direction: alternate;
-	-webkit-animation-iteration-count: infinite;
-	-webkit-animation-timing-function: linear;
-	z-index: 14;
-}
-/* Standard syntax */
-@keyframes floatButton1 {
-	0%   {background-color: red; left: 0px; top: 0px;}
-    50%  {background-color: white; left: 100px; top: 700px;}
-	100% {background-color: red; left: 0px; top: 0px;}
-}
-/* Chrome, Safari, Opera */
-@-webkit-keyframes floatButton1 {
- 	0%   {background-color: red; left: 0px; top: 0px;}
-    50%  {background-color: white; left: 100px; top: 700px;}
-	100% {background-color: red; left: 0px; top: 0px;}
-}
-@keyframes floatButton2 {
-	0%   {background-color: yellow; left: 150px; bottom: 0px;}
-    50% {background-color: white; left: 250px; bottom: 700px;}
-	100% {background-color: yellow; left: 150px; bottom: 0px;}
-}
-@-webkit-keyframes floatButton2 {
-	0%   {background-color: yellow; left: 0px; bottom: 0px;}
-    50% {background-color: white; left: 250px; bottom: 700px;}
-	100% {background-color: yellow; left: 0px; bottom: 0px;}
-}
-@keyframes floatButton3 {
-	0%   {background-color: white; left: 300px; top: 300px;}
-    50% {background-color: purple; left: 200px; top: 700px;}
-    100% {background-color: white; left: 400px; top: 0px;}
-}
-@-webkit-keyframes floatButton3 {
-    0%   {background-color: white; left: 300px; top: 300px;}
-    50% {background-color: purple; left: 200px; top: 700px;}
-    100% {background-color: white; left: 400px; top: 0px;}
-}
-@keyframes floatButton4 {
-	0%   {background-color: yellow; left: 400px; top: 600px;}
-    100% {background-color: purple; left: 440px; top: 0px;}
-}
-@-webkit-keyframes floatButton4 {
-    0%   {background-color: yellow; left: 400px; top: 600px;}
-    100% {background-color: purple; left: 440px; top: 0px;}
-}
-@keyframes floatButton5 {
-	0%   {background-color: purple; left: 500px; top: 300px;}
-    100% {background-color: white; left: 400px; top: 0px;}
-}
-@-webkit-keyframes floatButton5 {
-    0%   {background-color: purple; left: 400px; top: 300px;}
-    100% {background-color: white; left: 500px; top: 0px;}
-}
-@keyframes floatButton6 {
-	0%   {background-color: red; left: 600px; top: 0px;}
-    100% {background-color: yellow; left: 300px; top: 420px;}
-}
-@-webkit-keyframes floatButton6 {
-    0%   {background-color: red; right: 600px; top: 0px;}
-    100% {background-color: yellow; right: 300px; top: 420px;}
-}
-@keyframes floatButton7 {
-	0%   {background-color: yellow; right: 200px; top: 340px;}
-    100% {background-color: white; right: 600px; top: 0px;}
-}
-@-webkit-keyframes floatButton7 {
-    0%   {background-color: yellow; right: 200px; top: 340px;}
-    100% {background-color: white; right: 600px; top: 0px;}
-}
-@keyframes floatButton8 {
-	0%   {background-color: red; right: 400px; top: 300px;}
-    100% {background-color: white; right: 500px; top: 0px;}
-}
-@-webkit-keyframes floatButton8 {
-    0%   {background-color: red; right: 400px; top: 300px;}
-    100% {background-color: white; right: 100px; top: 0px;}
-}
-@keyframes floatButton9 {
-	0%   {background-color: yellow; right: 200px; top: 200px;}
-    100% {background-color: white; right: 260px; top: 0px;}
-}
-@-webkit-keyframes floatButton9 {
-    0%   {background-color: yellow; right: 200px; top: 200px;}
-    100% {background-color: white; right: 260px; top: 0px;}
-}
-@keyframes floatButton10 {
-	0%   {background-color: white; right: 100px; top: 0px;}
-    100% {background-color: purple; right: 300px; top: 400px;}
-}
-@-webkit-keyframes floatButton10 {
-    0%   {background-color: white; right: 100px; top: 0px;}
-    100% {background-color: purple; right: 300px; top: 400px;}
-}
-@keyframes floatButton11 {
-	0%   {background-color: yellow; right: 0px; top: 600px;}
-    100% {background-color: purple; right: 400px; top: 0px;}
-}
-@-webkit-keyframes floatButton11 {
-    0%   {background-color: yellow; right: 0px; top: 600px;}
-    100% {background-color: purple; right: 400px; top: 0px;}
-}
-@keyframes floatButton12 {
-	0%   {background-color: yellow; left: 500px; top: 500px;}
-    100% {background-color: purple; left: 0px; top: 0px;}
-}
-@-webkit-keyframes floatButton12 {
-    0%   {background-color: yellow; left: 500px; top: 500px;}
-    100% {background-color: purple; left: 0px; top: 0px;}
-}
-@keyframes floatButton13 {
-	0%   {background-color: yellow; right: 540px; top: 200px;}
-    100% {background-color: purple; right: 500px; top: 700px;}
-}
-@-webkit-keyframes floatButton13 {
-    0%   {background-color: yellow; right: 540px; top: 200px;}
-    100% {background-color: purple; right: 500px; top: 700px;}
-}
-@keyframes floatButton14 {
-	0%   {background-color: green; right: 600px; bottom: 0px;}
-    50% {background-color: yellow; right: 400px; bottom: 700px;}
-	100% {background-color: yellow; right: 200px; bottom: 0px;}
-}
-@-webkit-keyframes floatButton14 {
-    0%   {background-color: green; right: 600px; bottom: 0px;}
-    50% {background-color: yellow; right: 400px; bottom: 700px;}
-	100% {background-color: yellow; right: 200px; bottom: 0px;}
-}
-</style>
--->
-
-<style type="text/css">
-.floatingButton {
-	background: blue; 
-	width: 40px; 
-	height: 40px;
-	margin: 50px;
-	position: absolute;
-	float: left;
-	clear: both;
-	border-radius: 50%;
-	box-shadow: 0px 0px 20px 5px blue inset;
-	-webkit-border-radius: 20%;
-	-webkit-box-shadow: 0px 0px 20px 5px blue inset;
-}
-#button1 { 
-	animation: 
-		floatButton1 32s normal infinite linear,	
-		spin 10s infinite linear;
-	-webkit-animation:
-		floatButton1 32s normal infinite linear,	
-		spin 10s infinite linear;
-	z-index: 1;
-}
-#button2 { 
-	animation: 
-		floatButton2 30s alternate infinite linear,	
-		spin 10s infinite linear;
-	-webkit-animation:
-		floatButton2 30s alternate infinite linear,
-		spin 10s infinite linear;
-	z-index: 2;
-}
-#button3 { 
-	animation: 
-		floatButton3 34s alternate infinite linear,	
-		spin 10s infinite linear;
-	-webkit-animation:
-		floatButton3 34s alternate infinite linear,
-		spin 10s infinite linear;
-	z-index: 3;
-}
-#button4 { 
-	animation: 
-		floatButton4 24s alternate infinite linear,	
-		spin 10s infinite linear;
-	-webkit-animation:
-		floatButton4 24s alternate infinite linear,
-		spin 10s infinite linear;
-	z-index: 4;
-}
-#button5 { 
-	animation: 
-		floatButton5 26s alternate infinite linear,	
-		spin 10s infinite linear;
-	-webkit-animation:
-		floatButton5 26s alternate infinite linear,
-		spin 10s infinite linear;
-	z-index: 5;
-}
-#button6 { 
-	animation: 
-		floatButton6 28s alternate infinite linear,	
-		spin 10s infinite linear;
-	-webkit-animation:
-		floatButton6 28s alternate infinite linear,
-		spin 10s infinite linear;
-	z-index: 6;
-}
-#button7 { 
-	animation: 
-		floatButton7 30s alternate infinite linear,	
-		spin 10s infinite linear;
-	-webkit-animation:
-		floatButton7 30s alternate infinite linear,
-		spin 10s infinite linear;
-	z-index: 7;
-}
-#button8 { 
-	animation: 
-		floatButton8 32s alternate infinite linear,	
-		spin 10s infinite linear;
-	-webkit-animation:
-		floatButton8 32s alternate infinite linear,
-		spin 10s infinite linear;
-	z-index: 8;
-}
-#button9 { 
-	animation: 
-		floatButton9 34s alternate infinite linear,	
-		spin 10s infinite linear;
-	-webkit-animation:
-		floatButton9 34s alternate infinite linear,
-		spin 10s infinite linear;
-	z-index: 9;
-}
-#button10 { 
-	animation: 
-		floatButton10 36s alternate infinite linear,	
-		spin 10s infinite linear;
-	-webkit-animation:
-		floatButton10 36s alternate infinite linear,
-		spin 10s infinite linear;
-	z-index: 10;
-}
-#button11 { 
-	animation: 
-		floatButton11 22s alternate infinite linear,
-		spin 10s infinite linear;
-	-webkit-animation: 
-		floatButton11 22s alternate infinite linear,
-		spin 10s infinite linear;
-	z-index: 11;
-}
-#button12 { 
-	animation: 
-		floatButton12 24s alternate infinite linear,
-		spin 10s infinite linear;
-	-webkit-animation:
-		floatButton12 24s alternate infinite linear,
-		spin 10s infinite linear;
-	z-index: 12;
-}
-#button13 { 
-	animation: 
-		floatButton13 24s alternate infinite linear,
-		spin 10s infinite linear;
-	-webkit-animation:
-		floatButton13 24s alternate infinite linear,
-		spin 10s infinite linear;
-	z-index: 13;
-}
-#button14 { 
-	animation:
-		floatButton14 24s alternate infinite linear,
-		spin 10s infinite linear;
-	-webkit-animation:
-		floatButton14 24s alternate infinite linear,
-		spin 10s infinite linear;
-	z-index: 14;
-}
-@keyframes spin {
-    from {transform: rotate(0deg);}
-    to {transform: rotate(360deg);}
-}
-@-webkit-keyframes spin {
-    from {-webkit-transform: rotate(0deg);}
-    to {-webkit-transform: rotate(360deg);}
-}
-@keyframes floatButton1 {
-	0%   {background-color: red; left: 0px; top: 0px;}
-    50%  {background-color: white; left: 100px; top: 600px;}
-	100% {background-color: red; left: 0px; top: 0px;}
-}
-@-webkit-keyframes floatButton1 {
- 	0%   {background-color: red; left: 0px; top: 0px;}
-    50%  {background-color: white; left: 100px; top: 600px;}
-	100% {background-color: red; left: 0px; top: 0px;}
-}
-@keyframes floatButton2 {
-	0%   {background-color: yellow; left: 150px; bottom: 0px;}
-    50% {background-color: white; left: 250px; bottom: 600px;}
-	100% {background-color: yellow; left: 150px; bottom: 0px;}
-}
-@-webkit-keyframes floatButton2 {
-	0%   {background-color: yellow; left: 0px; bottom: 0px;}
-    50% {background-color: white; left: 250px; bottom: 600px;}
-	100% {background-color: yellow; left: 0px; bottom: 0px;}
-}
-@keyframes floatButton3 {
-	0%   {background-color: white; left: 300px; top: 300px;}
-    50% {background-color: purple; left: 200px; top: 600px;}
-    100% {background-color: white; left: 400px; top: 0px;}
-}
-@-webkit-keyframes floatButton3 {
-    0%   {background-color: white; left: 300px; top: 300px;}
-    50% {background-color: purple; left: 200px; top: 600px;}
-    100% {background-color: white; left: 400px; top: 0px;}
-}
-@keyframes floatButton4 {
-	0%   {background-color: yellow; left: 400px; top: 600px;}
-    100% {background-color: purple; left: 440px; top: 0px;}
-}
-@-webkit-keyframes floatButton4 {
-    0%   {background-color: yellow; left: 400px; top: 600px;}
-    100% {background-color: purple; left: 440px; top: 0px;}
-}
-@keyframes floatButton5 {
-	0%   {background-color: purple; left: 500px; top: 300px;}
-    100% {background-color: white; left: 400px; top: 0px;}
-}
-@-webkit-keyframes floatButton5 {
-    0%   {background-color: purple; left: 400px; top: 300px;}
-    100% {background-color: white; left: 500px; top: 0px;}
-}
-@keyframes floatButton6 {
-	0%   {background-color: red; left: 600px; top: 0px;}
-    100% {background-color: yellow; left: 300px; top: 420px;}
-}
-@-webkit-keyframes floatButton6 {
-    0%   {background-color: red; right: 600px; top: 0px;}
-    100% {background-color: yellow; right: 300px; top: 420px;}
-}
-@keyframes floatButton7 {
-	0%   {background-color: yellow; right: 200px; top: 340px;}
-    100% {background-color: white; right: 600px; top: 0px;}
-}
-@-webkit-keyframes floatButton7 {
-    0%   {background-color: yellow; right: 200px; top: 340px;}
-    100% {background-color: white; right: 600px; top: 0px;}
-}
-@keyframes floatButton8 {
-	0%   {background-color: red; right: 400px; top: 300px;}
-    100% {background-color: white; right: 500px; top: 0px;}
-}
-@-webkit-keyframes floatButton8 {
-    0%   {background-color: red; right: 400px; top: 300px;}
-    100% {background-color: white; right: 100px; top: 0px;}
-}
-@keyframes floatButton9 {
-	0%   {background-color: yellow; right: 200px; top: 200px;}
-    100% {background-color: white; right: 260px; top: 0px;}
-}
-@-webkit-keyframes floatButton9 {
-    0%   {background-color: yellow; right: 200px; top: 200px;}
-    100% {background-color: white; right: 260px; top: 0px;}
-}
-@keyframes floatButton10 {
-	0%   {background-color: white; right: 100px; top: 0px;}
-    100% {background-color: purple; right: 300px; top: 400px;}
-}
-@-webkit-keyframes floatButton10 {
-    0%   {background-color: white; right: 100px; top: 0px;}
-    100% {background-color: purple; right: 300px; top: 400px;}
-}
-@keyframes floatButton11 {
-	0%   {background-color: yellow; right: 0px; top: 600px;}
-    100% {background-color: purple; right: 400px; top: 0px;}
-}
-@-webkit-keyframes floatButton11 {
-    0%   {background-color: yellow; right: 0px; top: 600px;}
-    100% {background-color: purple; right: 400px; top: 0px;}
-}
-@keyframes floatButton12 {
-	0%   {background-color: yellow; left: 500px; top: 500px;}
-    100% {background-color: purple; left: 0px; top: 0px;}
-}
-@-webkit-keyframes floatButton12 {
-    0%   {background-color: yellow; left: 500px; top: 500px;}
-    100% {background-color: purple; left: 0px; top: 0px;}
-}
-@keyframes floatButton13 {
-	0%   {background-color: yellow; right: 540px; top: 200px;}
-    100% {background-color: purple; right: 500px; top: 600px;}
-}
-@-webkit-keyframes floatButton13 {
-    0%   {background-color: yellow; right: 540px; top: 200px;}
-    100% {background-color: purple; right: 500px; top: 600px;}
-}
-@keyframes floatButton14 {
-	0%   {background-color: white; right: 600px; bottom: 0px;}
-    50% {background-color: yellow; right: 400px; bottom: 600px;}
-	100% {background-color: yellow; right: 200px; bottom: 0px;}
-}
-@-webkit-keyframes floatButton14 {
-    0%   {background-color: white; right: 600px; bottom: 0px;}
-    50% {background-color: yellow; right: 400px; bottom: 600px;}
-	100% {background-color: yellow; right: 200px; bottom: 0px;}
-}
-</style>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-
-<!-- begin hit area toggle -->
-<script>
-$(document).ready(function(){
-    $(".hitArea").click(function(){
-        $(this).toggleClass("hitSelected");
-    });
-});
-$(document).ready(function(){
-    $("#pauseAll1").click(function(){
-        $(".hitSelected").removeClass("hitSelected").addClass("hitArea");
-    });
-});
-</script>
-<!-- end hit area toggle -->
-
-<!-- begin menu toggle -->
-<script>
-$(document).ready(function(){
-	$("#menuButton1").click(function() {
-		$(".menuButtonBox").toggleClass("menuButtonBox-change");
-		$(".menuBar").toggleClass("menuBar-change");
-	});
-});
-$(document).ready(function(){
-	$("#closeMenu1").click(function() {
-		$(".menuButtonBox").toggleClass("menuButtonBox-change");
-		$(".menuBar").toggleClass("menuBar-change");
-	});
-});
-</script>
-<!-- end menu toggle -->
-
-<!-- begin media play -->
-<script>
-function playPause(mediaID) { 
-	var myMedia = document.getElementById(mediaID); 
-    if (myMedia.paused) {
-        myMedia.play();
-	}
-    else { 
-        myMedia.pause();
-	}
-}  
-function pauseAll() {
-	var myMedia = document.getElementsByClassName('media');
-	var i = myMedia.length;
-	while (i--) {
-    	myMedia[i].pause();
-	}
-}
-<!-- end media play -->
-
-</script>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Soundscape</title>
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/soundscape2.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="fancybox/jquery.fancybox.min.css">
 </head>
 
 <body style="background-color: black">
-
-<!-- begin menu -->
-<!-- begin button box -->
-<div class="menuButtonBox">
-	<div id="menuButton1"><a class="menuButton">Menu</a></div>
-	<div class="pauseAllBox" id="pauseAll1" onClick="pauseAll()">
-    	<a class="menuButton"><img src="images/Speaker_Icon_white.png" width="20px" alt="Reset Audio"> Reset</a>
-	</div> 
-</div>
-<!-- end button box -->
-<div class="menuBar">
-	<div style="float: right;">
-		<button type="button" id="closeMenu1"><img src="images/x_button.png" width="16" height="16" alt="Close Menu"/></button>
+    <!-- begin menu -->
+    <!-- begin button box -->
+    <div class="menuButtonBox">
+        <div id="menuButton1"><a class="menuButton">Menu</a></div>
+        <div class="pauseAllBox" id="pauseAll1" onClick="pauseAll()">
+            <a class="menuButton"><img src="images/Speaker_Icon.svg" width="20px" alt="Reset Audio">Reset</a>
+        </div>
+    </div>
+    <!-- end button box -->
+    <div class="menuBar">
+        <button id="closeMenu1" class="fancybox-button fancybox-button--close" style="position: absolute; top: 0; right: 0" title="Close"></button>
+        <div class="menuText" style="width:100%">
+            <ul>
+                <li><a href="index.html">Soundscape 1</li>
+                <li><a href="soundscape2.html" class="menuCurrentPage">Soundscape 2</a></li>
+                <li><a href="soundscape3.html">Soundscape 3</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- end menu -->
+    <audio class="media" id="media1" loop>
+        <source src="media/11_SipSlurp.mp3" type="audio/mpeg">
+    </audio>
+    <audio class="media" id="media2" loop>
+        <source src="media/13_ChewWet.mp3" type="audio/mpeg">
+    </audio>
+    <audio class="media" id="media3" loop>
+        <source src="media/Track6_Soda.mp3" type="audio/mpeg">
+    </audio>
+    <audio class="media" id="media4" loop>
+        <source src="media/35_SneezeMale.mp3" type="audio/mpeg">
+    </audio>
+    <audio class="media" id="media5" loop>
+        <source src="media/Track1_Fan.mp3" type="audio/mpeg">
+    </audio>
+    <audio class="media" id="media6" loop>
+        <source src="media/23_DongCathedral.mp3" type="audio/mpeg">
+    </audio>
+    <audio class="media" id="media7" loop>
+        <source src="media/47_Rain.mp3" type="audio/mpeg">
+    </audio>
+    <audio class="media" id="media8" loop>
+        <source src="media/06_WalkNeutral.mp3" type="audio/mpeg">
+    </audio>
+    <audio class="media" id="media9" loop>
+        <source src="media/Track2_BackgroundVoices.mp3" type="audio/mpeg">
+    </audio>
+    <audio class="media" id="media10" loop>
+        <source src="media/20_DoorOpenShut.mp3" type="audio/mpeg">
+    </audio>
+    <audio class="media" id="media11" loop>
+        <source src="media/Track10_Heels.mp3" type="audio/mpeg">
+    </audio>
+    <audio class="media" id="media12" loop>
+        <source src="media/01_CarsDistantBG.mp3" type="audio/mpeg">
+    </audio>
+    <!--
+	<audio class="media" id="media13" loop>
+		<source src="media/Track72_Shower.mp3" type="audio/mpeg">
+	</audio>
+	<audio class="media" id="media14" loop>
+		<source src="media/03_BrushTeeth.mp3" type="audio/mpeg">
+	</audio>
+	-->
+    <div class="floatingButton" id="button1">
+        <div class="hitArea retainHit" id="hit1" onclick="playPause('media1')">&nbsp;</div>
+    </div>
+    <div class="floatingButton" id="button2">
+        <div class="hitArea retainHit" id="hit2" onclick="playPause('media2')">&nbsp;</div>
+    </div>
+    <div class="floatingButton" id="button3">
+        <div class="hitArea retainHit" id="hit3" onclick="playPause('media3')">&nbsp;</div>
+    </div>
+    <div class="floatingButton" id="button4">
+        <div class="hitArea retainHit" id="hit4" onclick="playPause('media4')">&nbsp;</div>
+    </div>
+    <div class="floatingButton" id="button5">
+        <div class="hitArea retainHit" id="hit5" onclick="playPause('media5')">&nbsp;</div>
+    </div>
+    <div class="floatingButton" id="button6">
+        <div class="hitArea retainHit" id="hit6" onclick="playPause('media6')">&nbsp;</div>
+    </div>
+    <div class="floatingButton" id="button7">
+        <div class="hitArea retainHit" id="hit7" onclick="playPause('media7')">&nbsp;</div>
+    </div>
+    <div class="floatingButton" id="button8">
+        <div class="hitArea retainHit" id="hit1" onclick="playPause('media8')">&nbsp;</div>
+    </div>
+    <div class="floatingButton" id="button9">
+        <div class="hitArea retainHit" id="hit2" onclick="playPause('media9')">&nbsp;</div>
+    </div>
+    <div class="floatingButton" id="button10">
+        <div class="hitArea retainHit" id="hit3" onclick="playPause('media10')">&nbsp;</div>
+    </div>
+    <div class="floatingButton" id="button11">
+        <div class="hitArea retainHit" id="hit4" onclick="playPause('media11')">&nbsp;</div>
+    </div>
+    <div class="floatingButton" id="button12">
+        <div class="hitArea retainHit" id="hit4" onclick="playPause('media12')">&nbsp;</div>
+    </div>
+    <!--
+	<div class="floatingButton" id="button13">
+		<div class="hitArea retainHit" id="hit4" onclick="playPause('media13')">&nbsp;</div>
 	</div>
-	<div class="menuText" style="width:100%">
-		<ul>
-			<li><a href="index.html">Soundscape 1</li>
-			<li><a href="soundscape2.html" class="menuCurrentPage">Soundscape 2</a></li>
-    		<li><a href="soundscape3.html">Soundscape 3</a></li>
-    	</ul>
+	<div class="floatingButton" id="button14">
+		<div class="hitArea retainHit" id="hit4" onclick="playPause('media14')">&nbsp;</div>
 	</div>
-</div>
-<!-- end menu -->
-
-<audio class="media" id="media1" loop>
-	<source src="media/11_SipSlurp.mp3" type="audio/mpeg">
-</audio>
-<audio class="media" id="media2" loop>
-	<source src="media/13_ChewWet.mp3" type="audio/mpeg">
-</audio>
-<audio class="media" id="media3" loop>
-	<source src="media/Track6_Soda.mp3" type="audio/mpeg">
-</audio>
-<audio class="media" id="media4" loop>
-	<source src="media/35_SneezeMale.mp3" type="audio/mpeg">
-</audio>
-<audio class="media" id="media5" loop>
-	<source src="media/Track1_Fan.mp3" type="audio/mpeg">
-</audio>
-<audio class="media" id="media6" loop>
-	<source src="media/23_DongCathedral.mp3" type="audio/mpeg">
-</audio>
-<audio class="media" id="media7" loop>
-	<source src="media/47_Rain.mp3" type="audio/mpeg">
-</audio>
-<audio class="media" id="media8" loop>
-	<source src="media/06_WalkNeutral.mp3" type="audio/mpeg">
-</audio>
-<audio class="media" id="media9" loop>
-	<source src="media/Track2_BackgroundVoices.mp3" type="audio/mpeg">
-</audio>
-<audio class="media" id="media10" loop>
-	<source src="media/20_DoorOpenShut.mp3" type="audio/mpeg">
-</audio>
-<audio class="media" id="media11" loop>
-    <source src="media/Track10_Heels.mp3" type="audio/mpeg">
-</audio>
-<audio class="media" id="media12" loop>
-	<source src="media/01_CarsDistantBG.mp3" type="audio/mpeg">
-</audio>
-<!--
-<audio class="media" id="media13" loop>
-	<source src="media/Track72_Shower.mp3" type="audio/mpeg">
-</audio>
-<audio class="media" id="media14" loop>
-	<source src="media/03_BrushTeeth.mp3" type="audio/mpeg">
-</audio>
--->
-
-<div class="floatingButton" id="button1">
-	<div class="hitArea" id="hit1" onclick="playPause('media1')">&nbsp;</div>
-</div>
-<div class="floatingButton" id="button2">
-	<div class="hitArea" id="hit2" onclick="playPause('media2')">&nbsp;</div>
-</div>
-<div class="floatingButton" id="button3">
-    <div class="hitArea" id="hit3" onclick="playPause('media3')">&nbsp;</div>
-</div>
-<div class="floatingButton" id="button4">
-	<div class="hitArea" id="hit4" onclick="playPause('media4')">&nbsp;</div>
-</div>
-<div class="floatingButton" id="button5">
-	<div class="hitArea" id="hit5" onclick="playPause('media5')">&nbsp;</div>
-</div>
-<div class="floatingButton" id="button6">
-	<div class="hitArea" id="hit6" onclick="playPause('media6')">&nbsp;</div>
-</div>
-<div class="floatingButton" id="button7">
-	<div class="hitArea" id="hit7" onclick="playPause('media7')">&nbsp;</div>
-</div>
-<div class="floatingButton" id="button8">
-	<div class="hitArea" id="hit1" onclick="playPause('media8')">&nbsp;</div>
-</div>
-<div class="floatingButton" id="button9">
-	<div class="hitArea" id="hit2" onclick="playPause('media9')">&nbsp;</div>
-</div>
-<div class="floatingButton" id="button10">
-    <div class="hitArea" id="hit3" onclick="playPause('media10')">&nbsp;</div>
-</div>
-<div class="floatingButton" id="button11">
-	<div class="hitArea" id="hit4" onclick="playPause('media11')">&nbsp;</div>
-</div>
-<div class="floatingButton" id="button12">
-	<div class="hitArea" id="hit4" onclick="playPause('media12')">&nbsp;</div>
-</div>
-<!--
-<div class="floatingButton" id="button13">
-	<div class="hitArea" id="hit4" onclick="playPause('media13')">&nbsp;</div>
-</div>
-<div class="floatingButton" id="button14">
-	<div class="hitArea" id="hit4" onclick="playPause('media14')">&nbsp;</div>
-</div>
--->
-
+	-->
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="js/main.js"></script>
+	
 </body>
+
 </html>
