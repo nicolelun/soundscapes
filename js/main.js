@@ -1,5 +1,5 @@
-<!-- begin menu toggle -->
 $(document).ready(function() {
+    <!-- begin menu toggle -->
     $("#menuButton1").click(function() {
         $(".menuButtonBox").toggleClass("menuButtonBox-change");
         $(".menuBar").toggleClass("menuBar-change");
@@ -9,27 +9,21 @@ $(document).ready(function() {
         $(".menuButtonBox").toggleClass("menuButtonBox-change");
         $(".menuBar").toggleClass("menuBar-change");
     });
-});
-<!-- end menu toggle -->
+    <!-- end menu toggle -->
 
-<!-- begin instructions -->
-$(document).ready(function() {
+    <!-- begin instructions -->
     $("#closeInstructions1").click(function() {
         $(".instructionsBox").toggleClass("instructionsBox-change");
     });
-});
-<!-- end instructions -->
+    <!-- end instructions -->
 
-<!-- begin hit area toggle -->
-$(document).ready(function() {
+    <!-- begin hit area toggle -->
     $(".hitArea.retainHit").click(function() {
         $(this).toggleClass("hitSelected");
     });
-});
-<!-- end hit area toggle -->
+    <!-- end hit area toggle -->
 
-<!-- begin media play -->
-$(document).ready(function() {
+    <!-- begin media play -->
     $("#pauseAll1").click(function() {
         $(".hitSelected").removeClass("hitSelected").addClass("hitArea");
     });
@@ -37,6 +31,7 @@ $(document).ready(function() {
     $("#playAll1").click(function() {
         $(".hitArea").addClass("hitSelected");
     });
+    <!-- end media play -->
 });
 
 function playPause(mediaID) {
@@ -63,5 +58,4 @@ function playAll() {
         myMedia[i].play();
     }
 }
-<!-- end media play -->
 
