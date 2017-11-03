@@ -68,86 +68,64 @@ a.menuCurrentPage:active {
 button {
     background-color: transparent;
     border: none;
+    transition: 0.15s;
 }
 #menuButton1 {
-     text-transform: uppercase;
+    text-transform: uppercase;
 }
 a.menuButton {
-     color: white;
-     background: #343434;
-     border: none;
-     float: left;
-     padding: 15px;
-     z-index: 100;
-     opacity: 0.7;
-     -webkit-opacity: 0.7;
+    display: inline-block;
+    float: left;
+    color: white;
+    background: #343434;
+    border: none;
+    padding: 15px;
+    margin-right: 10px;
+    z-index: 100;
+    opacity: 0.7;
+    -webkit-transition: 0.15s ease;
+    -o-transition: 0.15s ease;
+    transition: 0.15s ease;
 }
 a.menuButton:hover {
-    /*color: black;*/
     background-color: gray;
 }
 a.menuButton img {
     margin-right: 10px;
 }
-.pauseAllBox {
-    position: relative;
-    width: auto;
-    float: left;
-    margin-left: 10px;
-    /*bottom: 20px;
-    right: 0px;*/
-    z-index: 102;
-}
-.pauseAllBox:hover {
-    cursor: pointer;
-}
 .menuButtonBox {
     position: fixed;
     width: 340px;
-    /*top:0px;*/
     bottom: 20px;
     left: 0px;
-    /*margin-left:0px;*/
-    /*transition:margin-left .5s ease-in-out;
-    -webkit-transition:margin-left .5s ease-in-out;*/
-    /*transition:margin-bottom .5s ease-in-out;
-    -webkit-transition:margin-bottom .5s ease-in-out;*/
-    transition: left .5s ease-in-out;
-    -webkit-transition: left .5s ease-in-out;
+    -webkit-transition: .5s ease;
+    -o-transition: .5s ease;
+    transition: .5s ease;
     z-index: 101;
 }
 .menuButtonBox-change {
-    /*margin-left: 230px;*/
-    /*margin-bottom: 245px;*/
-    left: 238px;
+    -webkit-transform: translateX(230px);    
+    -ms-transform: translateX(230px);    
+    transform: translateX(230px);
 }
 .menuBar {
     position: fixed;
     width: 200px;
     height: 200px;
     padding: 15px;
-    /*top: 0px;*/
-    /*bottom: 0px;*/
     bottom: -230px;
-    /*margin-left: -230px;*/
-    /*margin-bottom: -230px;*/
+    left: 0;
     background: #343434;
     opacity: 0.7;
-    /*transition: margin-left .5s ease-in-out;
-    -webkit-transition: margin-left .5s ease-in-out;*/
-    /*transition: margin-bottom .5s ease-in-out;
-    -webkit-transition: margin-bottom .5s ease-in-out;*/
-    transition: bottom .5s ease-in-out;
-    -webkit-transition: bottom .5s ease-in-out;
-    -webkit-opacity: 0.7;
+    -webkit-transition: .5s ease;
+    -o-transition: .5s ease;
+    transition: .5s ease;
     z-index: 99;
 }
 .menuBar-change {
-    /*margin-left: 0;*/
-    /*margin-bottom: 0px;*/
-    bottom: 20px;
-    /*opacity: 0.7;
-    -webkit-opacity: 0.7;*/
+    -webkit-transform: translateY(-250px);    
+    -ms-transform: translateY(-250px);    
+    transform: translateY(-250px);
 }
 .menuBar li a {
     display: block;
@@ -169,12 +147,10 @@ div.hitArea {
     border-color: transparent;
     z-index: inherit;
     border-radius: 50%;
-    -webkit-border-radius: 50%;
 }
 div.hitArea:hover {
     border-color: blue;
     opacity: 0.5;
-    -webkit-opacity: 0.5;
 }
 div.hitSelected {
     width: 40px;
@@ -189,8 +165,6 @@ div.hitSelected {
     z-index: 19;
     border-radius: 50%;
     opacity: 0.9;
-    -webkit-border-radius: 50%;
-    -webkit-opacity: 0.9;
 }
 .soundBackground {
     background-color: black;
@@ -215,28 +189,28 @@ div.hitSelected {
     -webkit-animation-iteration-count: infinite;
 }
 @-webkit-keyframes changeBackground {
-    0% {background-color: black}
-    50% {background-color: #4B0082} /* indigo */
-    75% {background-color: #400040} /* dark purple red */
-    100% {background-color: black}
+    0% { background-color: black }
+    50% { background-color: #4B0082 } /* indigo */
+    75% { background-color: #400040 } /* dark purple red */
+    100% { background-color: black }
 }
 @keyframes changeBackground {
-    0% {background-color: black}
-    50% {background-color: #4B0082} /* indigo */
-    75% {background-color: #400040} /* dark purple red */
-    100% {background-color: black}
+    0% { background-color: black }
+    50% { background-color: #4B0082 } /* indigo */
+    75% { background-color: #400040 } /* dark purple red */
+    100% { background-color: black }
 }
 @-webkit-keyframes changeBackgroundB {
-    0% {background-color: black}
-    50% {background-color: #330066} /* dark purple blue */
-    75% {background-color: #000066} /* dark blue */
-    100% {background-color: black}
+    0% { background-color: black }
+    50% { background-color: #330066} /* dark purple blue */
+    75% { background-color: #000066} /* dark blue */
+    100% { background-color: black }
 }
 @keyframes changeBackgroundB {
-    0% {background-color: black}
-    50% {background-color: #330066} /* dark purple blue */
-    75% {background-color: #000066} /* dark blue */
-    100% {background-color: black}
+    0% { background-color: black }
+    50% { background-color: #330066} /* dark purple blue */
+    75% { background-color: #000066} /* dark blue */
+    100% { background-color: black }
 }
 .audioControlBox {
     width: 100%;
@@ -244,87 +218,72 @@ div.hitSelected {
     text-align: center;
     vertical-align: middle;
 }
-.soundTextContainer {
-    color: white;
-    float: right; 
-    width: 70%;
-    margin-top: 60px; 
-    margin-left: auto;
-    margin-right: auto;
-    opacity: 1;
-    animation-name: fadeIn;
-    animation-duration: 2s;
-    animation-fill-mode: forwards;
-    animation-delay: 5s;
-    -webkit-opacity: 0;
-    -webkit-animation-name: fadeIn;
-    -webkit-animation-duration: 2s;
-    -webkit-animation-fill-mode: forwards;
-    -webkit-animation-delay: 5s;
-}
 
-/* Chrome, Safari, Opera */
 @-webkit-keyframes fadeIn {
-    0%   {-webkit-opacity:0}
-    100% {-webkit-opacity:1}
+    0%   { opacity: 0 }
+    100% { opacity: 1 }
 }
-/* Standard syntax */
 @keyframes fadeIn {
-    0%   {opacity:0}
-    100% {opacity:1}
+    0%   { opacity: 0 }
+    100% { opacity: 1 }
 }
 
-/* Chrome, Safari, Opera */
 @-webkit-keyframes fadeOut {
-    0%   {-webkit-opacity:1}
-    100% {-webkit-opacity:0}
+    0%   { opacity: 1 }
+    100% { opacity: 0 }
 }
-/* Standard syntax */
 @keyframes fadeOut {
-    0%   {opacity:1}
-    100% {opacity:0}
+    0%   { opacity: 1 }
+    100% { opacity: 0 }
 }
 
 @-webkit-keyframes fadeInUp {
   0% {
-    -webkit-opacity: 0;
+    opacity: 0;
     -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100%, 0);
   }
   100% {
-    -webkit-opacity: 1;
+    opacity: 1;
     -webkit-transform: none;
+            transform: none;
   }
 }
 @keyframes fadeInUp {
   0% {
     opacity: 0;
-    transform: translate3d(0, 100%, 0);
+    -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100%, 0);
   }
   100% {
     opacity: 1;
-    transform: none;
+    -webkit-transform: none;
+            transform: none;
   }
 }
 
 @-webkit-keyframes fadeInRight {
   0% {
-    -webkit-opacity: 0;
-    -webkit-transform: translate3d(100%, 0, 0);
-  }
-  100% {
-    -webkit-opacity: 1;
-    -webkit-transform: none;
-  }
-}
-
-@keyframes fadeInRight {
-  0% {
     opacity: 0;
-    transform: translate3d(100%, 0, 0);
+    -webkit-transform: translate3d(100%, 0, 0);
+            transform: translate3d(100%, 0, 0);
   }
   100% {
     opacity: 1;
-    transform: none;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+            transform: translate3d(100%, 0, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
   }
 }
 
